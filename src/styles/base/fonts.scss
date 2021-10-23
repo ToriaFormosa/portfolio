@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'NightStillComes';
+  src: local('NightStillComes Bold'), local('NightStillComes-Bold'),
+    url('../fonts/NightStillComes-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NightStillComes';
+  src: local('NightStillComes Bold Italic'), local('NightStillComes-Bold-Italic'),
+  url('../fonts/NightStillComes-Bold-Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NightStillComes';
+  src: local('NightStillComes Regular'), local('NightStillComes-Regular'),
+  url('../fonts/NightStillComes-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NightStillComes';
+  src: local('NightStillComes Regular Italic'), local('NightStillComes-Regular-Italic'),
+  url('../fonts/NightStillComes-Regular-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stackyard';
+  src: local('Stackyard Regular'), local('Stackyard-Regular'),
+  url('../fonts/Stackyard-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'), local('Lato-Regular'),
+  url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Italic'), local('Lato-Italic'),
+  url('../fonts/Lato-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Light'), local('Lato-Light'),
+  url('../fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Light Italic'), local('Lato-Light-Italic'),
+  url('../fonts/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

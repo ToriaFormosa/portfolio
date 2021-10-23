@@ -1,0 +1,23 @@
+@keyframes offsetY {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(4px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

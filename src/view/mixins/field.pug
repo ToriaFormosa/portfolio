@@ -1,0 +1,10 @@
+mixin field(fieldType, type, fieldName, className, hint)
+	label.field(class=className)
+		case fieldType
+			when 'input'
+				input(type=type, name=fieldName, placeholder=hint)&attributes(attributes)
+			when 'textarea'
+				textarea(name=fieldName, placeholder=hint)
+		span.field__hint!= hint
+		span.field__underline
+		.field-error

@@ -1,0 +1,148 @@
+.about {
+	overflow: hidden;
+
+	&__outer {
+		width: 100%;
+		background-color: $gray-ef;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		padding: 99px 145px 172px 144px;
+		position: relative;
+
+		@include  max(md) {
+			flex-direction: column;
+			padding: 90px 70px;
+		}
+
+		@include  max(sm) {
+			padding: 40px 15px;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: $white;
+			position: absolute;
+			top: 0;
+			left: calc(-100% + 15px);
+
+			@include  max(lg) {
+				display: none;
+			}
+		}
+	}
+
+	&__content {
+		width: 100%;
+		padding-top: 57px;
+		position: relative;
+		z-index: 1;
+
+		@include  max(md) {
+			padding-top: 0;
+		}
+	}
+
+	&__hello {
+		font-family: $fontStackyard;
+		font-size: 30px;
+		line-height: 20px;
+		color: $black-01;
+		margin-bottom: 23px;
+
+		@include  max(sm) {
+			text-align: center;
+		}
+	}
+
+	&__name {
+		font-size: 30px;
+		line-height: 20px;
+		letter-spacing: 0.04em;
+		color: $black;
+		margin-bottom: 18px;
+
+		@include  max(sm) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.04em;
+		color: $gray-96;
+		margin-bottom: 33px;
+	}
+
+	&__button {
+		max-width: 168px;
+		padding: 6px 13px;
+		font-size: 15px;
+
+		@include  max(md) {
+			display: none;
+			margin-top: 70px;
+		}
+
+		@include  max(sm) {
+			margin-top: 30px;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			margin-left: 15px;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include  max(md) {
+				display: flex;
+			}
+		}
+	}
+
+	&__image {
+		max-width: 312px;
+		width: 100%;
+		height: 468px;
+		margin-left: 30px;
+		position: relative;
+
+		@include max(md) {
+			max-width: 428px;
+			margin-left: 0;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&__border {
+		position: absolute;
+		top: 56px;
+		left: -163px;
+
+		@include  max(md) {
+			top: 40px;
+			left: -100px;
+		}
+
+		@include  max(sm) {
+			top: 10px;
+			left: -10px;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+section#portfolio.portfolio
+	.container
+		.portfolio__masonry
+			.portfolio__item
+				+title('Portfolio', 'I want to present some of my work. (In the next section you can see the mobile versions. Scroll them for a full view)')
+				a(href='./images/portfolio/1.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/1-preview.jpg', alt='portfolio-item')
+					p Project 1
+			.portfolio__item
+				a(href='./images/portfolio/2.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/2-preview.jpg', alt='portfolio-item')
+					p Project 2
+			.portfolio__item
+				a(href='./images/portfolio/3.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/3-preview.jpg', alt='portfolio-item')
+					p Project 3
+			.portfolio__item
+				a(href='./images/portfolio/4.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/4-preview.jpg', alt='portfolio-item')
+					p Project 4
+			.portfolio__item
+				a(href='./images/portfolio/5.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/5-preview.jpg', alt='portfolio-item')
+					p Project 5
+			.portfolio__item
+				a(href='./images/portfolio/6.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/6-preview.jpg', alt='portfolio-item')
+					p Project 6
+			.portfolio__item
+				a(href='./images/portfolio/7.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/7-preview.jpg', alt='portfolio-item')
+					p Project 7
+			.portfolio__item
+				a(href='./images/portfolio/8.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/8-preview.jpg', alt='portfolio-item')
+					p Project 8
+			.portfolio__item
+				a(href='./images/portfolio/9.jpg', data-fancybox='gallery-1')
+					+icon('zoom')
+					img(src='./images/portfolio/9-preview.jpg', alt='portfolio-item')
+					p Project 9
+
+
+		.mobile
+			+title('Adaptive Layout',
+				'Adaptive Layout samples',
+				'mobile__title')
+			.mobile__wrapper
+				.mobile__tabs
+					.mobile__tabs-item.mobile__tabs-item--active Project 1
+					.mobile__tabs-item Project 2
+					.mobile__tabs-item Project 3
+					.mobile__tabs-item Project 4
+					.mobile__tabs-item Project 5
+					.mobile__tabs-item Project 6
+					.mobile__tabs-item Project 7
+					.mobile__tabs-item Project 8
+					.mobile__tabs-item Project 9
+				.mobile__content
+					.mobile__mockup
+						.mobile__screen-content
+							img(src='./images/portfolio/phone/1.jpg')
+						img(src='./images/iphone-mockup.png', alt='iphone')

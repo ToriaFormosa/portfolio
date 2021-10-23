@@ -1,0 +1,32 @@
+/* Breakpoints */
+$media-list: (
+  'xxs': 374,
+  'xs': 560,
+  'sm': 767,
+  'md': 1079,
+  'lg': 1279,
+  'xl': 1599,
+  'xxl': 1900,
+);
+
+/* Fonts */
+$mainFont: 'NightStillComes', sans-serif;
+$fontStackyard: 'Stackyard', sans-serif;
+$fontLato: 'Lato', sans-serif;
+
+/* Colors */
+$mainColor: #3b3939;
+$black: #000;
+$black-01: #010101;
+$white: #fff;
+$gray-3b: #3b3939;
+$gray-ef: #efefef;
+$gray-96: #969696;
+$gray-cc: #cccccc;
+$gray-8f: #8f8f8f;
+$gray-32: #323232;
+$gray-d6: #d6d6d6;
+
+/* Retina */
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

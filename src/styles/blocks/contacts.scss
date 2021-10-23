@@ -1,0 +1,87 @@
+.contacts {
+	$self: &;
+
+	padding: 168px 0 126px;
+
+	@include max(md) {
+		padding: 90px 0;
+	}
+
+	@include max(sm) {
+		padding: 40px 0;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		@include max(sm) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__left {
+		width: 32%;
+		padding-top: 6px;
+
+		@include max(sm) {
+			max-width: 600px;
+			width: 100%;
+			padding-top: 0;
+		}
+	}
+
+	&__right {
+		width: 65.7%;
+
+		@include max(sm) {
+			width: 100%;
+			margin-top: 50px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 44px;
+
+		@include max(sm) {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+
+		#{$self}__field {
+			width: 48%;
+
+			@include max(sm) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__field {
+		@include max(sm) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__submit {
+		justify-content: space-between;
+		max-width: 168px;
+		padding: 6px 14px 6px 20px;
+		font-size: 15px;
+		margin-top: 31px;
+
+		@include max(sm) {
+			margin: 25px auto 0;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			margin-left: 15px;
+			transform: rotate(-90deg);
+		}
+	}
+}

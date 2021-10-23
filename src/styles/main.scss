@@ -1,0 +1,29 @@
+/* Base */
+@import "base/var";
+@import "base/mixin";
+@import "base/fonts";
+@import "base/animation";
+@import "base/global";
+
+/* Libs */
+@import "./../../node_modules/swiper/swiper";
+@import "libs/jquery.fancybox.css";
+@import "libs/intlTelInput.min.css";
+
+/* Partials */
+@import "partials/header";
+@import "partials/footer";
+@import "partials/button";
+@import "partials/border-anim";
+@import "partials/title";
+@import "partials/field";
+@import "partials/socials";
+@import "partials/popup";
+
+/* Blocks */
+@import "blocks/first-screen";
+@import "blocks/about";
+@import "blocks/portfolio";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/mobile";

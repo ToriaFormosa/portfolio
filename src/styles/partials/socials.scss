@@ -1,0 +1,23 @@
+.socials {
+	$self: &;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__item {
+		+ #{$self}__item {
+			margin-left: 33px;
+		}
+
+		@include hover {
+			a {
+				opacity: 0.8;
+			}
+		}
+
+		a {
+			transition: opacity 0.3s ease;
+		}
+	}
+}

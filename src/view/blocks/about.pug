@@ -1,0 +1,12 @@
+section#about.about
+	.about__outer
+		.container.about__container
+			.about__content
+				.about__hello Hello
+				.about__name I’m Artem Zhukov
+				.about__text Welcome to my portfolio. I'm a frontend developer and one of my main areas of interest is website development. I use modern technologies in my work and constantly improve myself. The result and enjoyment of the creation process are the main components of success.
+				+button('View Works', 'about__button', 'angle-down-circle', '#portfolio')
+			.about__image.js-border-container
+				img(src='./images/about.jpg', alt='about')
+				+border-anim('about__border')
+			+button('View Works', 'about__button about__button--mobile', 'angle-down-circle', '#portfolio')

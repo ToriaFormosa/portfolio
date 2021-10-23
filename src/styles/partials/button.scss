@@ -1,0 +1,45 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 152px;
+	width: 100%;
+	padding: 13px;
+	border-radius: 22px;
+	border: 1px solid $black;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	color: $black-01;
+	cursor: pointer;
+	transition: border-color 0.3s ease, color 0.3s ease;
+
+	@include hover {
+		border-color: $gray-96;
+		color: $gray-96;
+
+		svg {
+			fill: $gray-96;
+		}
+	}
+
+	svg {
+		transition: fill 0.3s ease;
+	}
+
+	&--white {
+		border-color: $white;
+		color: $white;
+		transition: opacity 0.3s ease;
+
+		@include hover {
+			border-color: $white;
+			color: $white;
+			opacity: 0.8;
+
+			svg {
+				fill: $white;
+			}
+		}
+	}
+}

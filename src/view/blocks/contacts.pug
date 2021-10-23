@@ -1,0 +1,11 @@
+section#contacts.contacts
+	.container.contacts__container
+		.contacts__left
+			+title('Contact', 'The form is temporarily unavailable. Please use the contacts below.')
+		form.contacts__right.js-form-validate(action='php/mail.php', method='POST')
+			.contacts__row
+				+field('input', 'text', 'firstName', 'contacts__field', 'Your Name')(required = true)
+				+field('input', 'email', 'email', 'contacts__field', 'Email')(required = true)
+				//+field('input', 'tel', 'phone', 'contacts__field contacts__field--phone')(required = true)
+			+field('textarea', 'text', 'object', 'contacts__field', 'Object')
+			+button('Send Now', 'contacts__submit', 'angle-down-circle')(type='submit')

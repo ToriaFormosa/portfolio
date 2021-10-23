@@ -1,0 +1,25 @@
+.footer {
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 34px 16px;
+		border-top: 1px solid $gray-d6;
+
+		@include  max(sm) {
+			padding: 20px;
+		}
+
+		@include  max(xs) {
+			flex-direction: column;
+		}
+	}
+
+	&__copyrights {
+		@include  max(xs) {
+			order: 1;
+			margin-top: 15px;
+			text-align: center;
+		}
+	}
+}
