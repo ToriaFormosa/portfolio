@@ -5,15 +5,23 @@ $(window).on('load', function() {
 				pic = $('.mobile__screen-content img');
 
 	tabs.on('click', function () {
-		let that = $(this),
-				newPath = pic.attr('src').replace(pic.attr('src'), './images/portfolio/phone/' + images[that.index()] + '.jpg');
+		let that = $(this);
 
-		tabs.removeClass('mobile__tabs-item--active');
-		that.addClass('mobile__tabs-item--active');
+		if (!that.hasClass('mobile__tabs-item--active')) {
+			let newPath = pic.attr('src').replace(pic.attr('src'), './images/portfolio/phone/' + images[that.index()] + '.jpg');
 
-		pic.fadeOut(100);
-		setTimeout(function () {
-			pic.attr('src', newPath).fadeIn(300);
-		}, 150);
+			tabs.removeClass('mobile__tabs-item--active');
+			that.addClass('mobile__tabs-item--active');
+
+			pic.fadeOut(100);
+
+			setTimeout(function () {
+				pic.attr('src', newPath);
+			}, 100);
+
+			setTimeout(function () {
+				pic.fadeIn(100);
+			}, 200);
+		}
 	});
 })
